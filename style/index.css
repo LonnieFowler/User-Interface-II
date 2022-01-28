@@ -43,26 +43,34 @@ table {
 	border-spacing: 0;
 }
 
+*{
+    box-sizing: border-box;
+    max-width: 100%;
+}
+html{
+    font-size:62.5%;
+}
+
 header{
     background-color:darkslategrey;
     padding:20px;
     margin-bottom: 15px;
-
+    font-size: 4rem;
+    color: white;
 }
 
-footer{
-    background-color:darkslateblue;
-    text-align:center;
-    padding:20px;
+
+
+a {
+    text-decoration: none;
 }
-.social{
-    display:flex;
-    flex-flow:row wrap;
-    justify-content:space-around;
-    padding:20px;
-    
-    
-} 
+
+nav{
+    text-decoration:none;
+}
+h2{
+    font-size:4rem;
+}
 
 .firstsection{
     display:flex;
@@ -70,26 +78,108 @@ footer{
     justify-content:center;
 }
 
-.bio{
+.topbio{
     padding:20px;
     width:40%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+#projectbutton{
+    width:150px;
+    height: 150px;
+    border-radius:70%;
+    margin-top:15px;
+    margin-right:17%;
+}
+#biop{
+    font-size: 2.5rem;
 }
 
 .row{
    display:flex;
    justify-content:space-evenly;
-   flex-direction:row;
+   flex-flow:row wrap;
    padding:20px;
 }
 
 .portfolio-element{
     text-align:center;
+    margin-bottom: 40px;
+    font-size: 3rem;
     }
 
-nav.social{
+
+    
+    footer{
+        background-color:darkslateblue;
+        text-align:center;
+        padding:20px;
+    }
+
+    #footbutton{
+        border-radius:60%;
+    }
+    .social{
+        display:flex;
+        flex-flow:row nowrap;
+        justify-content:space-evenly;
+        padding:10px;
+        
+    }
+    /*nav.social{
         display:flex;
         justify-content: space-between;
         margin-top:10%;
-    } 
+    }*/
+
+
+    @media(max-width:800px){
+        
+
+        h1{
+            text-align:center;
+        }
+
+        #flex-container {
+            display: flex;
+            flex-flow: column wrap;
+            align-items:center;
+        }
+
+        .firstsection{
+            display:flex;
+            flex-flow:column wrap;
+            align-items: center;
+        }
+        .topbio{
+            width:60%;
+
+        }
+        #projectbutton{
+            width:150px;
+            margin-top:-1px;
+            margin-left:80px;
+            margin-bottom: 20px;
+        }
+        #biop{
+            font-size: 2.5rem;
+        }
+
+        .nav-button {
+            width: 20%;
+            height: 40px;
+        }
+
+        #footbutton{
+            font-size: 2.5rem;
+        }
+    }
+
+    @media(max-width:500px){
+        .topbio{
+            width:80%;
+        }
+    }
 
    
